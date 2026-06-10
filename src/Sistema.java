@@ -26,14 +26,13 @@ public class Sistema {
 		try {
 			file = new File("Sobres.txt");
 			s = new Scanner(file);
-			//s.nextLine();
 			
 			while(s.hasNextLine()) {
 				String linea = s.nextLine();
 				String[] partes = linea.split(";");
 				
 				String nombreCarta = partes[0];
-				String rareza = partes[1];
+				int rareza = Integer.parseInt(partes[1]);
 				String tipo = partes[2];
 				
 				//Dependiendo del "Tipo" de carta que sea, la guardaremos en la arraylist con su respectivo constructor.
@@ -51,14 +50,10 @@ public class Sistema {
 					listaCartas.add(e);
 					
 				}
-
 				
-				
-				
-				System.out.println(linea);
 			}
 			
-			
+		//En caso de no encontrar la ruta del archivo, nos reportará la excepcion
 		}catch(FileNotFoundException e) {
 			System.out.println("Archivos no encontrado");
 			

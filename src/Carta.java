@@ -1,9 +1,23 @@
 
-public abstract class Carta {
+/**
+ * Representará una carta pokemon que posean los jugadores.
+ * Cada carta posee un nombre, una rareza y un tipo.
+ */
+
+public abstract class Carta  implements Calculabe{
 	private String nombreCarta;
-	private String rareza;
+	private int rareza;
 	private String tipo;
-	public Carta(String nombreCarta, String rareza, String tipo) {
+	
+	/** 
+	 * Constructor de la clase carta
+	 * 
+	 * 	@param nombreCarta: Nombre que posee la carta 
+	 * 	@param rareza: Niveles de rareza (1,2,3,4,5) siendo 1 el mas comun y 5 el mas raro.
+	 * 	@param tipo: Naturaleza de la carta (Pokemon, Item, Supporte y Energy)
+	 */
+	
+	public Carta(String nombreCarta, int rareza, String tipo) {
 		super();
 		this.nombreCarta = nombreCarta;
 		this.rareza = rareza;
@@ -15,10 +29,10 @@ public abstract class Carta {
 	public void setNombreCarta(String nombreCarta) {
 		this.nombreCarta = nombreCarta;
 	}
-	public String getRareza() {
+	public int getRareza() {
 		return rareza;
 	}
-	public void setRareza(String rareza) {
+	public void setRareza(int rareza) {
 		this.rareza = rareza;
 	}
 	public String getTipo() {
