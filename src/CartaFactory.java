@@ -12,7 +12,10 @@ public class CartaFactory {
 		int rareza = Integer.parseInt(datos[1]);
 		String tipo = datos[2];
 		
-		//Dependiendo del "Tipo" de carta que sea, la guardaremos en la arraylist con su respectivo constructor.
+		/**Dependiendo del "Tipo" de carta que sea, 
+		 * la guardaremos en la arraylist con su respectivo constructor.
+		 * Gracias a la implementacion de CartaFactory.
+		 */
 		if (tipo.equalsIgnoreCase("Pokemon")) {
 			Pokemon p = new Pokemon(nombreCarta,rareza,tipo,Integer.parseInt(datos[3]),Integer.parseInt(datos[4]));
 			listaCartas.add(p);
