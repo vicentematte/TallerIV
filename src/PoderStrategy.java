@@ -6,7 +6,7 @@ public interface PoderStrategy {
 	 * el tipo de carta.
 	 * 
 	 * @param carta La carta a la cual le calcularemos el poder
-	 * @return el opder calculador como valor entero
+	 * @return el opder calculado como valor entero
 	 */
 
 	int calcularPoder(Carta carta);

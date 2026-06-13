@@ -4,7 +4,6 @@
  * una rareza, un tipo y un elemento.
  */
 
-
 public class Energy extends Carta{
 	private String elemento;
 	

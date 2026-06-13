@@ -16,6 +16,7 @@ public class Item extends Carta{
 	 * @param bonificacion Valor de bonificacion que otorga el Item.
 	 * 	 
 	 */
+	
 	public Item(String nombreCarta, int rareza, String tipo, int bonificacion) {
 		super(nombreCarta, rareza, tipo);
 		this.bonificacion = bonificacion;
