@@ -35,4 +35,9 @@ public class Supporter extends Carta{
 		return super.toString() + "Supporter [efectoPorTurno=" + efectoPorTurno + "]";
 	}
 
+	@Override
+	public void aceptar(CartaVisitor visitor) {
+		visitor.visitar(this);		
+	}
+
 }

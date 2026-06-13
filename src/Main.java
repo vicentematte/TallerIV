@@ -1,4 +1,5 @@
 
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -9,6 +10,6 @@ public class Main {
 		 */
 		
 		Sistema sistema = Sistema.getInstancia();
-		sistema.abrirSobres();		
-	}
+		sistema.abrirSobres();
+		}
 }

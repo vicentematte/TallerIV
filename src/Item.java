@@ -35,5 +35,11 @@ public class Item extends Carta{
 		return super.toString() + "Item [bonificacion=" + bonificacion + "]";
 	}
 
+	@Override
+	public void aceptar(CartaVisitor visitor) {
+		visitor.visitar(this);
+		
+	}
+
 
 }

@@ -49,6 +49,9 @@ public abstract class Carta{
 		this.estrategiaPoder = estrategiaPoder;
 	}
 	
+	public abstract void aceptar(CartaVisitor visitor);
+	
+	
     public int calcularPoder() {
         if (estrategiaPoder == null) {
             throw new IllegalStateException("No se ha asignado una estrategia de poder a la carta " + nombreCarta);

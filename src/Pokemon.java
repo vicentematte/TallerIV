@@ -40,5 +40,9 @@ public class Pokemon extends Carta{
 	public String toString() {
 		return super.toString() + "Pokemon [daño=" + daño + ", cantEnergias=" + cantEnergias + "]";
 	}
+	@Override
+	public void aceptar(CartaVisitor visitor) {
+		visitor.visitar(this);
+	}
 	
 }

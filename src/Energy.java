@@ -34,4 +34,9 @@ public class Energy extends Carta{
 		return super.toString() +"Energy [elemento=" + elemento + "]";
 	}
 
+	@Override
+	public void aceptar(CartaVisitor visitor) {
+		visitor.visitar(this);
+	}
+
 }
