@@ -54,7 +54,12 @@ public class Sistema {
 			System.out.println("Archivos no encontrado");
 			
 		}
-
+	}
+	public void agregarCarta(Carta carta){
+		
+	}
+	public void eliminarCarta(String nombre) {
+		
 	}
 	
 }
